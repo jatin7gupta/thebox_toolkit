@@ -106,9 +106,9 @@ def download(url, file_name, session=None):
 
                 # for process bar display
                 cur = time.time()
-                rate = len(data)/(cur-start_time)
-                finish_unit = int(finish_size*bar_len/length)
-                print('\r'+'[%.2f%%]: |%s| Remain: %s %s/s ETA:%s -' % (float(finish_size/length*100), '>'*finish_unit+' '*(bar_len-finish_unit), show(length-finish_size), show(rate), eta(rate, length-finish_size)),end='')
+                # rate = len(data)/(cur-start_time)
+                # finish_unit = int(finish_size*bar_len/length)
+                # print('\r'+'[%.2f%%]: |%s| Remain: %s %s/s ETA:%s -' % (float(finish_size/length*100), '>'*finish_unit+' '*(bar_len-finish_unit), show(length-finish_size), show(rate), eta(rate, length-finish_size)),end='')
                 start_time = cur
 
         # when user choose to stop download
